@@ -49,6 +49,13 @@ app.get('/bad', (req, res) => {
   })
 })
 
+app.get('/projects', (req, res) => {
+  /*res.send('<h1>Hello Express</h1>')*/
+  res.render('projects', {
+    pageTitle: 'Projects Page'
+  })
+})
+
 app.listen(port, () => {
   console.log(`Server is up on port ${port}`)
 })
